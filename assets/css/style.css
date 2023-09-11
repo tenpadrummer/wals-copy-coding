@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header{
+ width: 100%;
+ background-color: #EC715F;
+ height: 70px;
+}
+
+.header{
+ display: flex;
+ justify-content: space-between;
+ font-size: 0;
+}
+
+.logo{
+  height: 70px;
+}
+
+.nav{
+  display: flex;
+  color: #FAFAFA;
+}
+
+.nav a{
+  text-decoration:none;
+  color: white;
+}
+
+.nav-item{
+  width: 120px;
+  line-height: 70px;
+  color: #FAFAFA;
+  padding: 0 30px;
+  list-style: none;
+  font-size: 16px;
+}
+
+#hero{
+  background-image: url("../images/mv.png");
+  background-size:cover;
+  background-position:center;
+  color:#FAFAFA;
+  width:100%;
+  height:650px;
+  text-align:center;
+}
+
+#hero h1{
+  font-family: 'Raleway', sans-serif;
+  padding-top: 200px;
+  font-size: 64px;
+}
+
+#hero p{
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#portfolio{
+  background-color: #ECEFF1;
+}
+
+.section-title{
+  text-align: center;
+  padding-top: 90px;
+  font-size: 32px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section-title::after {
+  content:"";
+  background-color: #EC715F;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  display: block;
+}
+
+.section-text{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 16px;
+}
+
+.images{
+  display: flex;
+  flex-flow: row wrap;
+  width: 920px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.image{
+  width: 300px;
+  height: 250px;
+  margin: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image:nth-child(-n+3){
+	margin-top: 0;
+}
+
+.image:nth-child(3n){
+	margin-right: 0;
+}
+
+.bg_1{
+  background-image:url("../images/sketch.jpg");
+}
+
+.bg_2{
+  background-image:url("../images/websuku.png");
+}
+
+.bg_3{
+  background-image:url("../images/write.jpg");
+}
+
+.bg_4{
+  background-image:url("../images/webcamp.png");
+}
+
+.bg_5{
+  background-image:url("../images/talk.jpg");
+}
+
+.bg_6{
+  background-image:url("../images/webcamp-mother.png");
+}
+
+#feature{
+  background-size: cover;
+  background-position: center;
+}
+
+.features{
+  display: flex;
+  width: 980px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  margin: 0 auto;
+}
+
+.feature-list{
+  font-size: 60px;
+  text-align: center;
+  width: 320px;
+  margin-right: 10px;
+}
+
+.feature-list:last-child{
+  margin-right: 0;
+}
+
+.feature-title{
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.feature-text{
+  text-align: left;
+  font-size: 16px;
+}
+
+#profile{
+  background-color:#ECEFF1;
+}
+
+.profile-wrapper{
+  display: flex;
+  padding: 30px 0 90px 0;
+  width: 1028px;
+  margin: 0 auto;
+}
+
+.profile-left{
+  width: 50%;
+}
+
+.profile-image{
+  background-image: url("../images/my-icon.jpg");
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.profile-right{
+  width: 50%;
+}
+
+.profile-name{
+  font-size: 20px;
+  color: #000000;
+}
+
+.profile-text{
+  font-size: 16px;
+  color: #000000;
+  padding-top: 5px;
+
+}
+
+.profile-padding-bottom {
+  padding-bottom: 20px;
+}
+
+.contact-wrapper{
+  display: flex;
+  padding: 30px 0 90px 0;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-left{
+	width: 130px;
+	margin: 0 auto;
+}
+
+.contact-right{
+	width: 170px;
+	margin: 0 auto;
+	font-size: 50px;
+}
+
+.contact-title{
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.contact-mail{
+  padding-bottom: 20px;
+  display: block;
+}
+
+.right-wrapper{
+  margin-right: 20px;
+}
+
+.right-wrapper:first-child{
+  margin-right: 0px;
+}
+
+.right-wrapper:last-child{
+  margin-right: 0px;
+}
+
+footer{
+  background-color: #EC715F;
+  height: 60px;
+}
+
+#footer{
+  text-align: center;
+  color: #FAFAFA;
+}
+
+#footer p{
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  line-height: 60px;
+}
+
+@media(max-width: 768px){
+  header{
+    height: 50px;
+  }
+
+  .logo{
+    height: 50px;
+  }
+  .container{
+    width: 90%;
+  }
+
+  .sp-none{
+    display: none;
+  }
+
+  .profile-left{
+    width: 100%;
+  }
+
+  .profile-right{
+    width: 100%;
+  }
+}
